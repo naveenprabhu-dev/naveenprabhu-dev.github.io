@@ -1,26 +1,70 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0e131f;
+  --foreground: #ededed;
+  --neon-blue: #1faaff;
+  --neon-mint: #c4ebc8;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Smooth scrolling is handled by Lenis (see LenisProvider). Do not set
+   scroll-behavior here — it conflicts with Lenis's RAF-driven scroll. */
+
+/* CRT Scanline Overlay */
+.crt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.25)
+  );
+  background-size: 100% 4px;
+  z-index: 50;
+  opacity: 0.6;
+}
+
+/* Reusable Glow Effects */
+.glow-blue {
+  box-shadow: 0 0 10px rgba(31, 170, 255, 0.6), 0 0 20px rgba(31, 170, 255, 0.4);
+}
+
+.glow-mint {
+  box-shadow: 0 0 10px rgba(196, 235, 200, 0.6), 0 0 20px rgba(196, 235, 200, 0.4);
+}
+
+.hover-glow-blue:hover {
+  box-shadow: 0 0 15px rgba(31, 170, 255, 0.8), 0 0 30px rgba(31, 170, 255, 0.6);
+}
+
+.hover-glow-mint:hover {
+  box-shadow: 0 0 15px rgba(196, 235, 200, 0.8), 0 0 30px rgba(196, 235, 200, 0.6);
+}
+
+/* Neon Text */
+.text-glow-blue {
+  text-shadow: 0 0 5px rgba(31, 170, 255, 0.8), 0 0 10px rgba(31, 170, 255, 0.5);
+}
+
+.text-glow-mint {
+  text-shadow: 0 0 5px rgba(196, 235, 200, 0.8), 0 0 10px rgba(196, 235, 200, 0.5);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(14, 19, 31, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(31, 170, 255, 0.2);
 }
