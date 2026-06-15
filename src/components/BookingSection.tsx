@@ -43,7 +43,7 @@ export default function BookingSection() {
 
         <div className="relative z-10">
           <h3 className="text-3xl font-bold text-white mb-3 uppercase tracking-widest text-glow-blue text-center">
-            <span className="text-neon-mint mr-3">&gt;</span> Contact
+            Contact
           </h3>
           <p className="text-gray-300 text-center mb-8 max-w-2xl mx-auto leading-relaxed">
             I love meeting new people and enjoy talking about computer science, psychology, chess, or anything else! Reserve a time slot below or email me at{' '}

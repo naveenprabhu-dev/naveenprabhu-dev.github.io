@@ -19,7 +19,6 @@ export default function Navbar() {
           transition={{ type: 'spring', stiffness: 420, damping: 18 }}
           className="text-xl font-bold text-white flex items-center space-x-2 group origin-left"
         >
-          <span className="text-neon-blue opacity-80 group-hover:opacity-100 transition-opacity">&gt;</span>
           <span className="text-glow-blue group-hover:text-neon-blue transition-colors">NP</span>
           <span className="animate-pulse w-2 h-5 bg-neon-mint ml-1"></span>
         </motion.a>
@@ -58,6 +57,13 @@ export default function Navbar() {
             className="inline-block text-gray-300 hover:text-neon-mint hover:text-glow-mint transition-colors"
           >
             Chess
+          </motion.a>
+          <motion.a
+            href="#booking"
+            {...linkMotion}
+            className="inline-block text-gray-300 hover:text-neon-blue hover:text-glow-blue transition-colors"
+          >
+            Contact
           </motion.a>
         </div>
         {/* Mobile Menu Icon Placeholder */}

@@ -20,7 +20,7 @@ export default function Hero() {
 
       <div id="experience" className="mt-20">
         <h3 className="text-2xl font-bold text-white mb-10 flex items-center uppercase tracking-widest">
-          <span className="text-neon-mint mr-3">&gt;</span> Experience
+          Experience
         </h3>
         <div className="flex flex-col space-y-6 ml-2">
           <ExperienceItem
