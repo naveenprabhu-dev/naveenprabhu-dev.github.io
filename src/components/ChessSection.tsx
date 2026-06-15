@@ -13,7 +13,7 @@ export default function ChessSection() {
             CHESS
           </h3>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl leading-relaxed">
-            Beyond engineering, I am an active competitive chess player. I approach the game with the same analytical rigor and strategic planning as software development. Currently, I am actively seeking the <span className="text-neon-mint font-bold">FM (FIDE Master)</span> title.
+            Beyond engineering, I am an active competitive chess player with the title of <span className="text-neon-mint font-bold">national master (NM)</span>. I also love teaching and contributing to others’ growth. I take on students of all levels; take a look at my chess website below. I enjoy writing about various topics related to chess, please subscribe to my substack if you’re interested!
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
             <a 

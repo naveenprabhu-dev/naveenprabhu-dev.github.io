@@ -46,6 +46,13 @@ export default function Navbar() {
             Projects
           </motion.a>
           <motion.a
+            href="#skills"
+            {...linkMotion}
+            className="inline-block text-gray-300 hover:text-neon-mint hover:text-glow-mint transition-colors"
+          >
+            Skills
+          </motion.a>
+          <motion.a
             href="#chess"
             {...linkMotion}
             className="inline-block text-gray-300 hover:text-neon-mint hover:text-glow-mint transition-colors"

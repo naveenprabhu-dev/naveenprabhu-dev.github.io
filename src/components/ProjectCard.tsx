@@ -7,6 +7,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 interface ProjectCardProps {
   title: string;
   description: string;
+  skills?: string[];
   githubUrl?: string;
   liveUrl?: string;
 }
@@ -14,6 +15,7 @@ interface ProjectCardProps {
 export default function ProjectCard({
   title,
   description,
+  skills,
   githubUrl,
   liveUrl,
 }: ProjectCardProps) {
@@ -53,7 +55,19 @@ export default function ProjectCard({
         <h3 className="text-xl font-bold mb-3 transition-colors duration-300 text-neon-mint text-glow-mint group-hover:text-white">
           {title}
         </h3>
-        <p className="text-gray-300 text-sm leading-relaxed mb-6">{description}</p>
+        <p className="text-gray-300 text-sm leading-relaxed mb-4">{description}</p>
+        {skills && skills.length > 0 && (
+          <ul className="flex flex-wrap gap-2 mb-6" aria-label="Skills used">
+            {skills.map((skill) => (
+              <li
+                key={skill}
+                className="text-[11px] tracking-wider uppercase text-neon-blue/90 border border-neon-blue/30 bg-neon-blue/5 rounded-sm px-2 py-0.5"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
       <div className="flex space-x-4" style={{ transform: 'translateZ(15px)' }}>
         {githubUrl && (

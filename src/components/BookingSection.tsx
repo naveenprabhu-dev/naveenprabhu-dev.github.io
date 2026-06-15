@@ -43,10 +43,17 @@ export default function BookingSection() {
 
         <div className="relative z-10">
           <h3 className="text-3xl font-bold text-white mb-3 uppercase tracking-widest text-glow-blue text-center">
-            <span className="text-neon-mint mr-3">&gt;</span> Reserve A Slot
+            <span className="text-neon-mint mr-3">&gt;</span> Contact
           </h3>
           <p className="text-gray-300 text-center mb-8 max-w-2xl mx-auto leading-relaxed">
-            Want to talk shop — chess, code, or anything in between? Pick a time below.
+            I love meeting new people and enjoy talking about computer science, psychology, chess, or anything else! Reserve a time slot below or email me at{' '}
+            <a
+              href="mailto:navnp04@gmail.com"
+              className="text-neon-blue hover:text-glow-blue underline underline-offset-4 decoration-neon-blue/50 hover:decoration-neon-blue transition-colors"
+            >
+              navnp04@gmail.com
+            </a>
+            .
           </p>
 
           <AnimatePresence mode="wait">
