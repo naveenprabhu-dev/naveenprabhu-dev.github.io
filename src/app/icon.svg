@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="#0e131f" stroke="#1faaff" stroke-width="3"/>
+  <text x="50%" y="50%" dy="2"
+        font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="30" font-weight="700" letter-spacing="-1"
+        text-anchor="middle" dominant-baseline="central">
+    <tspan fill="#1faaff">N</tspan><tspan fill="#c4ebc8">P</tspan>
+  </text>
+</svg>
