@@ -14,8 +14,8 @@ const links = [
   { href: '#experience', label: 'Experience', accent: 'mint' },
   { href: '#projects', label: 'Projects', accent: 'blue' },
   { href: '#skills', label: 'Skills', accent: 'mint' },
-  { href: '#chess', label: 'Chess', accent: 'mint' },
-  { href: '#booking', label: 'Contact', accent: 'blue' },
+  { href: '#chess', label: 'Chess', accent: 'blue' },
+  { href: '#booking', label: 'Contact', accent: 'mint' },
 ] as const;
 
 const accentClass = (accent: 'blue' | 'mint') =>
