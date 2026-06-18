@@ -24,10 +24,11 @@ export default function Projects() {
       githubUrl: 'https://github.com',
     },
     {
-      title: 'US Chess Insights',
+      title: 'EloJourney',
       description: 'Given the birth date of a US Chess member, this scraper finds the amount of games, months, and the win % that the player achieved to reach various rating milestones. Great for understanding how long chess improvement really takes!',
       skills: ['Python', 'Flask', 'BeautifulSoup', 'SQLite'],
       githubUrl: 'https://github.com/naveenprabhu-dev/chess-uscf-rating-progression',
+      liveUrl: 'https://elojourney.com',
     },
   ];
 
